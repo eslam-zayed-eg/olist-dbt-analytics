@@ -1,0 +1,30 @@
+
+version: 2
+
+models:
+  - name: mart_sales
+    description: "Aggregated sales metrics for each order"
+
+    columns:
+      - name: order_id
+        description: "Order identifier"
+        data_tests:
+          - not_null
+          - unique
+
+      - name: total_items
+        data_tests:
+          - not_null
+
+      - name: total_sales
+        data_tests:
+          - not_null
+
+      - name: total_freight
+        data_tests:
+          - not_null
+
+      - name: total_amount
+        data_tests:
+          - not_null
+          

@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: fct_order_items
+    description: "Fact table containing one row per order item"
+
+    columns:
+      - name: order_id
+        data_tests:
+          - not_null
+
+      - name: order_item_id
+        data_tests:
+          - not_null
+
+      - name: price
+        data_tests:
+          - not_null
+
+      - name: freight_value
+        data_tests:
+          - not_null

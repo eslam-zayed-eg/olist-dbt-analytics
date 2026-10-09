@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: stg_customers
+    description: "Staging model for Olist customers"
+
+    columns:
+      - name: customer_id
+        description: "Unique identifier for each customer record"
+        data_tests:
+          - not_null
+          - unique
+
+      - name: customer_unique_id
+        description: "Unique identifier for each customer"
+        data_tests:
+          - not_null

@@ -1,0 +1,26 @@
+
+# Python environment
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# dbt generated files
+target/
+logs/
+dbt_packages/
+
+# Local data files
+data/
+*.csv
+*.xlsx
+
+# Secrets and local profiles
+.env
+.env.*
+profiles.yml
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
